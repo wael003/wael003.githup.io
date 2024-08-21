@@ -1,0 +1,241 @@
+body {
+    margin: 0px;
+    padding: 0;
+}
+
+.menu {
+    background-color: #333;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    display: block;
+    overflow: hidden;
+
+}
+
+.ul-menu li {
+    float: right;
+
+}
+
+p {
+    display: inline;
+    font-size: 40px;
+
+}
+
+.a-menu {
+    text-decoration: none;
+    color: white;
+    padding: 17px;
+    display: block;
+}
+
+.a-menu:hover {
+    background-color: #000;
+}
+
+.d-body {
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.d-left {
+    grid-column: 1;
+
+}
+
+.d-right {
+    grid-column: 2;
+
+}
+
+#ima{
+    border-radius: 50%;
+    width: 200px;
+}
+
+.dec {
+    color: black;
+    display: block;
+    font-size: 20px;
+}
+
+.icon {
+    color: #000;
+    padding: 5px;
+}
+
+.progress {
+    margin: 35px 0;
+
+}
+
+.prog {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 37px;
+}
+
+.left {
+    width: 20%;
+    float: left;
+}
+
+.right {
+    width: 80%;
+    height: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+    float: right;
+    background-color: #eee;
+
+}
+
+#color-java {
+    background-color: #05a78f;
+    width: 80%;
+    height: 20px;
+    display: block;
+    animation: java 2s;
+
+}
+
+#color-script {
+    background-color: #05a78f;
+    width: 50%;
+    height: 20px;
+    display: block;
+    animation: script 2s;
+}
+
+#color-html {
+    background-color: #05a78f;
+    width: 70%;
+    height: 20px;
+    display: block;
+    animation: html 2s;
+}
+
+#color-api {
+    background-color: #05a78f;
+    width: 30%;
+    height: 20px;
+    display: block;
+    animation: api 2s;
+}
+
+#color-android {
+    background-color: #05a78f;
+    width: 40%;
+    height: 20px;
+    display: block;
+    animation: android 2s;
+}
+
+#color-linux {
+    background-color: #05a78f;
+    width: 60%;
+    height: 20px;
+    display: block;
+    animation: linux 2s;
+}
+
+@keyframes java {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes script {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+
+        width: 50%;
+    }
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes api {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 30%;
+    }
+}
+
+@keyframes android {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 40%;
+    }
+}
+
+@keyframes linux {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+#button-show{
+    position: relative;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    
+
+}
+
+#button-show:hover{
+    background-color: #041704;
+    transition: .7s ;
+
+}
+@media screen and (max-width:800px) {
+    .d-body {
+        grid-template-rows: 1fr 1fr;
+        
+    }
+    .d-left{
+        grid-row: 1;
+    }
+    .d-right{
+        grid-row: 2;
+    }
+   
+}
